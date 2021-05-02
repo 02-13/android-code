@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E6E6E6">
+<!--이미지는 임의로 보이기 위해 첨부하였습니다 이후에는 실제 서버 데이터를 받아 사용할 예정입니다(이미지는 삭제)-->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/cov19" />
+<!--            android:layout_marginBottom="100dp"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="거리측정"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/distancing"
+                app:iconTint="@color/black"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="확진 현황"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/patient"
+                app:iconTint="@color/black"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="선별진료소"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/hospital"
+                app:iconTint="@color/black"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="코로나백신"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/vaccine"
+                app:iconTint="@color/black"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
